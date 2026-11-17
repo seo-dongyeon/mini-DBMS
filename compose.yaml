@@ -1,0 +1,20 @@
+services:
+  dev:
+    build: ./.devcontainer
+    working_dir: /work
+    volumes:
+      - .:/work
+      - build:/work/build
+      - data:/data
+    ports:
+      - "8080:8080"
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    stdin_open: true
+    tty: true
+
+volumes:
+  build:
+  data:

@@ -1,0 +1,17 @@
+{
+    "name": "mini-dbms",
+    "dockerComposeFile": "../compose.yaml",
+    "service": "dev",
+    "workspaceFolder": "/work",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    }
+}
